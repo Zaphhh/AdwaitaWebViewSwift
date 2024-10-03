@@ -34,7 +34,7 @@ Install `webkitgtk6.0-dev` or similar (based on the package manager) as well as 
 ## Usage
 
 ```swift
-struct Counter: View {
+struct ContentView: View {
 
     @State private var url: String = "https://github.com/Zaphik/AdwaitaWebViewSwift"
 
