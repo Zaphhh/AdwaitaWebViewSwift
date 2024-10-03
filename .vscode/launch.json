@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:adwitaweb}",
+            "name": "Debug adwitaweb",
+            "program": "${workspaceFolder:adwitaweb}/.build/debug/adwitaweb",
+            "preLaunchTask": "swift: Build Debug adwitaweb"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:adwitaweb}",
+            "name": "Release adwitaweb",
+            "program": "${workspaceFolder:adwitaweb}/.build/release/adwitaweb",
+            "preLaunchTask": "swift: Build Release adwitaweb"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:adwitaweb}",
+            "name": "Debug Test",
+            "program": "${workspaceFolder:adwitaweb}/.build/debug/Test",
+            "preLaunchTask": "swift: Build Debug Test"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:adwitaweb}",
+            "name": "Release Test",
+            "program": "${workspaceFolder:adwitaweb}/.build/release/Test",
+            "preLaunchTask": "swift: Build Release Test"
+        }
+    ]
+}
