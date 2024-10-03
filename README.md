@@ -33,7 +33,20 @@ Install `webkitgtk6.0-dev` or similar (based on the package manager) as well as 
 
 ## Usage
 
-Take a look at the simple [sample app](Tests/main.swift).
+```swift
+struct Counter: View {
+
+    @State private var url: String = "https://github.com/Zaphik/AdwaitaWebViewSwift"
+
+    var view: Body {
+         WebView(url: $url)
+                .setSize(width: 800, height: 600)
+    }
+
+}
+```
+
+Take a look at the simple [sample app](Tests/program.swift).
 Check out the [Adwaita](https://github.com/AparokshaUI/Adwaita) packages.
 
 ## Thanks
