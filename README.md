@@ -1,6 +1,6 @@
 # WebView
 
-_WebView_ adds support for embedding a (you guessed it)webview into GNOME apps built using [Adwaita For Swift](https://github.com/AparokshaUI/adwaita-swift)
+**WebView** adds support for embedding a webview into GNOME apps built using [Adwaita For Swift](https://github.com/AparokshaUI/adwaita-swift).
 
 ## Table of Contents
 
