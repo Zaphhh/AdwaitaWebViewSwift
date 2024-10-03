@@ -10,7 +10,7 @@
 
 ## Installation
 ### Dependencies
-Install `webkitgtk6.0-dev` or similar (based on the package manager) as well as `gtk4-devel` and `libadwaita-dev` (or similar).
+Install `webkitgtk6.0-devel` or similar (based on the package manager) as well as `gtk4-devel` and `libadwaita-devel` (or similar).
 
 ### Examples
 * Debian and derivatives
