@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "adwitaweb",
+    platforms: [
+        .macOS(.v10_15)
+    ],
     products: [
         .library(name: "WebView", targets: ["WebView"]),
         .library(name: "CWebView", targets: ["CWebView"]),
