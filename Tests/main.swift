@@ -12,8 +12,48 @@ struct Test: App{
         Window(id: "main"){ window in
             WebView(url: $url)
                 .setSize(width: 800, height: 600)
+                .topToolbar {
+                    ToolbarView(app: app)
+                }
             
         }
     }
 }
 
+struct ToolbarView: View {
+    @State private var about = false
+    var app: AdwaitaApp 
+
+    var view: Body {
+        HeaderBar.end {
+            Menu(icon: .default(icon: .openMenu)) {
+                MenuButton("New Window", window: false) {
+                    app.addWindow("main")
+                }
+                .keyboardShortcut("n".ctrl())
+                MenuButton("Close Window") {
+                    app.quit()
+                }
+                .keyboardShortcut("w".ctrl())
+                MenuSection {
+                    MenuButton("About Me", window: false) {
+                        about = true
+                    }
+                }
+            }
+            .primary()
+            .tooltip("Main Menu")
+            .aboutDialog(
+                visible: $about,
+                app: "WebViewAdwaita",
+                developer: "zaph",
+                version: "dev",
+                icon: .custom(name: "xyz.zaph.webview"),
+                website: .init(string: "https://github.com/Zaphik/AdwaitaWebViewSwift)!,
+                issues: .init(string: "https://github.com/Zaphik/AdwaitaWebViewSwift)!
+            )
+        }
+    
+    }
+    
+}
