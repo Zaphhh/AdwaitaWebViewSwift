@@ -49,8 +49,8 @@ struct ToolbarView: View {
                 developer: "zaph",
                 version: "dev",
                 icon: .custom(name: "xyz.zaph.webview"),
-                website: .init(string: "https://github.com/Zaphik/AdwaitaWebViewSwift)!,
-                issues: .init(string: "https://github.com/Zaphik/AdwaitaWebViewSwift)!
+                website: .init(string: "https://github.com/Zaphik/AdwaitaWebViewSwift")!,
+                issues: .init(string: "https://github.com/Zaphik/AdwaitaWebViewSwift")!
             )
         }
     
