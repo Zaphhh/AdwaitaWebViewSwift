@@ -46,7 +46,7 @@ struct ContentView: View {
 }
 ```
 
-Take a look at the simple [sample app](Tests/program.swift).
+Take a look at the simple [sample app](Tests/main.swift).
 Check out the [Adwaita](https://github.com/AparokshaUI/Adwaita) packages.
 
 ## Thanks
