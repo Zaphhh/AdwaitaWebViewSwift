@@ -28,7 +28,7 @@ Install `webkitgtk6.0-devel` or similar (based on the package manager) as well a
 2. Open the `Package.swift` file.
 3. Into the `Package` initializer, under `dependencies`, paste:
 ```swift
-.package(url: "https://github.com/Zaphik/AdwaitaWebViewSwift", branch: "main")   
+.package(url: "https://github.com/Zaphhh/AdwaitaWebViewSwift", branch: "main")   
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ Install `webkitgtk6.0-devel` or similar (based on the package manager) as well a
 ```swift
 struct ContentView: View {
 
-    @State private var url: String = "https://github.com/Zaphik/AdwaitaWebViewSwift"
+    @State private var url: String = "https://github.com/Zaphhh/AdwaitaWebViewSwift"
 
     var view: Body {
          WebView(url: $url)
