@@ -1,6 +1,6 @@
 import Meta
 import CWebView
-import Foundation
+import Adwaita
 
 public struct WebView: AdwaitaWidget {
     @Binding var url: String
